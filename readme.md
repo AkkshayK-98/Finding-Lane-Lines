@@ -17,22 +17,22 @@ My pipeline consisted of the following 6 steps.
 <img src="test_images/solidWhiteRight.jpg" width="480" alt="Original Image" />
 
 1. Converted the images to grayscale from RGB model.
-<img src="test_images_output/grayscale_image.jpg" width="480" alt="Grayscale Image" />
+<img src="test_image_output/grayscale_image.jpg" width="480" alt="Grayscale Image" />
 
 2. Use cv2.GaussianBlur() to blur the image.
-<img src="test_images_output/blurred_image.jpg" width="480" alt="Blurred Image" />
+<img src="test_image_output/blurred_image.jpg" width="480" alt="Blurred Image" />
 
 3. Then, canny detection is used to detect edges of a gray model image.
-<img src="test_images_output/canny_detection_image.jpg" width="480" alt="Canny Detection Image" />
+<img src="test_image_output/canny_detection_image.jpg" width="480" alt="Canny Detection Image" />
 
 4. The next step is to define a region of interest(ROI). The ROI is usually a trapazoidal region in the center of the image or video, as the camera is usually fixed to the center of the car.
-<img src="test_images_output/ROI_image.jpg" width="480" alt="ROI Image" />
+<img src="test_image_output/ROI_image.jpg" width="480" alt="ROI Image" />
 
 5. The next step is to get hough transform. This transforms the edges to a set of lines represented by a start point and an end point. This creates the lane lines.
-<img src="test_images_output/hough_transform_image.jpg" width="480" alt="Hough Transformed Image" />
+<img src="test_image_output/hough_transform_image.jpg" width="480" alt="Hough Transformed Image" />
 
 6. Finally, the lane lines image (Hough Transformed image) and initial image is added together to get the final image.
-<img src="test_images_output/final_image.jpg" width="480" alt="Final Image" />
+<img src="test_image_output/final_image.jpg" width="480" alt="Final Image" />
 
 
 # Testing
